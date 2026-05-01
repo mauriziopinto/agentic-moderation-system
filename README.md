@@ -8,7 +8,12 @@ This project implements a single-agent content moderation system using OpenAI's 
 
 - **Type:** Single agent with ReAct reasoning loop
 - **Model:** GPT-4o-mini via OpenAI API
-- **Tools (5):** Text pattern analysis, policy lookup, user history check, severity assessment, decision recording
+- **Tools (5):**
+  - *Text pattern analysis* — scans content for profanity, hate speech keywords, threats, and suspicious patterns like excessive capitalization or URLs
+  - *Policy lookup* — retrieves the relevant platform policy for a specific violation category (e.g., hate speech rules and severity definitions)
+  - *User history check* — looks up the content author's past moderation record to identify repeat offenders
+  - *Severity assessment* — maps detected violations to a severity level (low, medium, high, critical) based on policy definitions
+  - *Decision recording* — logs the final moderation action (approve, flag for review, or reject) with confidence score and explanation
 - **Memory:** Conversation history (working memory), policy database, moderation history
 - **Safeguards:** Confidence threshold (0.7), iteration limit (15), high-severity override, action constraints
 
