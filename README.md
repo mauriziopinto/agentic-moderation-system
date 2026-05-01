@@ -82,11 +82,3 @@ The notebook includes 5 test cases demonstrating:
 3. Legitimate news content approved
 4. Medical/educational context correctly identified
 5. Coded language failure case (known limitation)
-
-## Cost
-
-Running all test cases costs approximately $0.02 using GPT-4o-mini.
-
-## Author
-
-Maurizio Pinto — Woolf University / Udacity AI Master's Program
